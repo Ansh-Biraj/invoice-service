@@ -10,5 +10,5 @@ double net = netAmount(gross, discountPct);
 return net + (net * gstPct / 100);
 }
 }
-
+// Invoice calculation service for Jenkins CI demonstration
 
