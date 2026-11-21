@@ -15,4 +15,8 @@ assertEquals(1062.0, calc.total(1000, 10, 18), 0.001);
 public void invalidDiscount() {
 calc.netAmount(1000, 120);
 }
+@Test(expected = IllegalArgumentException.class)
+public void negativeDiscount() {
+calc.netAmount(1000, -5);
+}
 }
